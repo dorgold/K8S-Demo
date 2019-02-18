@@ -1,16 +1,16 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: deploy-example
+  name: my-deployment
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: my-pod
+      app: my-app
   template:
     metadata:
       labels:
-        app: my-pod
+        app: my-app
     spec:
       containers:
       - name: demo-container
